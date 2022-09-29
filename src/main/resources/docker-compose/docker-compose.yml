@@ -1,0 +1,16 @@
+version: '3'
+services:
+  database:
+    container_name: postgres_db
+    image: postgres:10.17
+    restart: always
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_PASSWORD=postgres"
+      - "POSTGRES_DB=jax-ws-crud-service"
+    ports:
+      - 5432:5432
+    volumes:
+      - pg-data:/var/lib/postgresql
+volumes:
+  pg-data:
