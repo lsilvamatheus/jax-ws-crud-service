@@ -1,4 +1,4 @@
-package com.lsilva.matheus.databaseconfig;
+package com.lsilva.matheus.jaxwscrudservice.config.databaseconfig;
 
 public class DbException extends RuntimeException{
     private static final Long serialVersionUID = 1L;
